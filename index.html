@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Service</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: #1e3a8a;
+      color: white;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    nav ul li:hover {
+      color: #facc15;
+    }
+
+    nav .user {
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      height: calc(100vh - 70px); /* subtract navbar height */
+    }
+
+    .hero-left, .hero-right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-left {
+      margin: 100px;
+      flex-direction: column;
+      text-align: left;
+      padding: 40px;
+      background-color: #f9fafb;
+    }
+
+    .hero-left h1 {
+      font-size: 48px;
+      color: #00ebf8;
+      margin-bottom: 20px;
+    }
+    span{
+        color: #1e3a8a;
+    }
+
+    .hero-left p {
+      font-size: 18px;
+      color: #4b5563;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-left button {
+      padding: 12px 25px;
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-left button:hover {
+      background-color: #2563eb;
+    }
+
+    .hero-right img {
+      max-width: 80%;
+    max-height: 80%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">LaundryMart</div>
+    <ul>
+      <li>Home</li>
+      <li>Services</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+    </ul>
+    <div class="user">Hello, Jitendra</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Left Div -->
+    <div class="hero-left">
+      <h1><span>Revitalize Your Clothes with Expert</span> <br>Laundry Service!</h1>
+      <p>Say goodbye to laundry day hassles. Book your service today and let us handle the rest with care and convenience. Clean clothes, fresh life!</p>
+      <button>Book a Service Today</button>
+    </div>
+
+    <!-- Right Div -->
+    <div class="hero-right">
+      <img src="https://static.vecteezy.com/system/resources/previews/007/152/965/non_2x/cartoon-smiling-washing-machine-character-vector.jpg" alt="Laundry Service">
+    </div>
+  </section>
+
+</body>
+</html>
